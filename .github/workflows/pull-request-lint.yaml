@@ -51,4 +51,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: webiny/action-conventional-commits@v1.3.0
         with:
-          allowed-commit-types: "build,chore,ci,deploy,docs,feat,fix,perf,refactor,revert,style,test"
+          allowed-commit-types: >
+            build,chore,ci,deploy,docs,feat,fix,perf,refactor,revert,style,test
