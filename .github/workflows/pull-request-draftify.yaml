@@ -1,0 +1,17 @@
+---
+name: pull-request-draftify
+
+# yamllint disable-line rule:truthy
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches: [main]
+
+jobs:
+  draftify:
+    runs-on: ubuntu-22.04
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: voiceflow/draft-pr@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
