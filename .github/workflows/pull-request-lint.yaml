@@ -44,3 +44,12 @@ jobs:
           globs: "**/*.(md|MD)"
           # doesn't work if the name of the config doesn't start with dot
           config: "./.config/.markdownlint.yaml"
+
+  conventional-commits:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: webiny/action-conventional-commits@v1.3.0
+        with:
+          allowed-commit-types: >
+            build,chore,ci,deploy,docs,feat,fix,perf,refactor,revert,style,test
