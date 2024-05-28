@@ -1,6 +1,7 @@
 ---
 name: pull-request-lint
 
+# yamllint disable-line rule:truthy
 on:
   pull_request:
     types: [opened, reopened, synchronize, ready_for_review]
