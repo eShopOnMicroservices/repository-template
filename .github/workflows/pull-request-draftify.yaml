@@ -15,4 +15,9 @@ jobs:
     steps:
       - uses: voiceflow/draft-pr@latest
         with:
+          # Minimal permissions:
+          # 1. Administration: Read and Write
+          # 2. Contents: Read and Write
+          # 3. Metadata: Read-only
+          # 3. Pull requests: Read and Write
           token: ${{ secrets.DRAFTIFY_TOKEN }}
