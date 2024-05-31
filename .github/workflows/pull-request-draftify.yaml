@@ -19,6 +19,6 @@ jobs:
           app_id: ${{ secrets.APP_CI_ID }}
           private_key: ${{ secrets.APP_CI_KEY }}
           revoke: true
-      - uses: voiceflow/draft-pr@latest
+      - uses: voiceflow/draft-pr@v1.1
         with:
           token: ${{ steps.generate_token.outputs.token }}
