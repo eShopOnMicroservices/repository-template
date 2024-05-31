@@ -4,11 +4,11 @@ name: pull-request-sync-template
 # yamllint disable-line rule:truthy
 on:
   schedule:
-    - cron: "0 0 4 * *"
+    - cron: "0 4 * * *"
   workflow_dispatch:
 
 jobs:
-  draftify:
+  sync-template:
     runs-on: ubuntu-22.04
     steps:
       - uses: tibdex/github-app-token@v2
