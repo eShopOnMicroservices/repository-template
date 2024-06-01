@@ -18,6 +18,9 @@ jobs:
           app_id: ${{ secrets.APP_CI_ID }}
           private_key: ${{ secrets.APP_CI_KEY }}
           revoke: true
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ steps.generate_token.outputs.token }}
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
