@@ -6,16 +6,16 @@ Status: STATUS
 
 ## Context
 
-<your text here>.
+{your text here}.
 
 ## Decision
 
-<your text here>.
+{your text here}.
 
 ## Rationale
 
-1. **<your text here>**: <your text here>.
+1. **{your text here}**: {your text here}.
 
 ## Implications
 
-1. **<your text here>**: <your text here>.
+1. **{your text here}**: {your text here}.
