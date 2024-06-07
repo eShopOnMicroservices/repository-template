@@ -1,5 +1,5 @@
 ---
-name: pull-request-sync-template
+name: schedule-sync-template
 
 # yamllint disable-line rule:truthy
 on:
