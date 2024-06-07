@@ -2,7 +2,9 @@
 
 Date: DATE
 
-Status: STATUS
+## Status
+
+STATUS
 
 ## Context
 
