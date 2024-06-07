@@ -53,3 +53,17 @@ jobs:
         with:
           allowed-commit-types: >
             build,chore,ci,deploy,docs,feat,fix,perf,refactor,revert,style,test
+
+  required:
+    if: always()
+    runs-on: ubuntu-22.04
+    needs:
+      - typos
+      - yamllint
+      - markdownlint
+      - conventional-commits
+      - dotenv-linter
+    steps:
+      - uses: re-actors/alls-green@v1.2.2
+        with:
+          jobs: ${{ toJSON(needs) }}
