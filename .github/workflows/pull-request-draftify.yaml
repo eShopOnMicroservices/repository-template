@@ -11,9 +11,9 @@ on:
 jobs:
   draftify:
     runs-on: ubuntu-22.04
-    if: |-
+    if: >
       ${{
-        github.event.pull_request.draft != 'true' &&
+        github.event.pull_request.draft == 'false' &&
         github.actor != 'dependabot[bot]'
       }}
     steps:
