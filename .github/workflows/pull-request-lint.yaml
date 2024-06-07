@@ -52,7 +52,7 @@ jobs:
       - uses: webiny/action-conventional-commits@v1.3.0
         with:
           allowed-commit-types: >
-            build,chore,ci,deploy,docs,feat,fix,perf,refactor,revert,style,test
+            build,chore,ci,deploy,docs,feat,fix,bugfix,perf,refactor,revert,style,test
 
   required:
     if: always()
